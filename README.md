@@ -10,3 +10,11 @@ You might need to run the container as a user that exists on the host, by adding
 
 ## TODOTXT
 The config assumes that your todo, done, report files are located in ~/workspace/todo
+
+## GIT
+If the content within /home/user/workspace happens to be a git repo,
+you need to mount the ssh key, config, authorized_keys and gitconfig in the container
+to be able to push changes.
+```
+e.g. -v ~/.gitconfig:/etc/gitconfig -v ~/.ssh:/home/user/.ssh
+```

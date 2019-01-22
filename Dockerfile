@@ -1,7 +1,7 @@
 FROM alpine:3.8 
 LABEL maintainer "Alexander Pehm <alexander@alexanderpehm.at>"
 
-RUN apk add --no-cache bash make curl tar gzip tzdata
+RUN apk add --no-cache bash make curl tar gzip tzdata git vim openssh-client
 
 ENV HOME /home/user
 RUN addgroup -g 1000 -S user && \

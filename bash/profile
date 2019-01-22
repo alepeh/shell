@@ -1,4 +1,5 @@
-export EDITOR=$(which vi)
+export EDITOR=$(which vim)
 
 export TODOTXT_DEFAULT_ACTION=ls
 alias t="todo.sh -a -d /home/user/.todo/config"
+alias vi=vim
